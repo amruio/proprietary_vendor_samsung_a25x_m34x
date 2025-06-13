@@ -1,0 +1,23 @@
+#
+# Automatically generated file. DO NOT MODIFY
+#
+
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),m34x)
+
+$(call add-radio-file-sha1-checked,radio/fld.bin_SM-M346B,bb4267655b43e295b868471f49626ae4147af37f)
+$(call add-radio-file-sha1-checked,radio/harx.bin_SM-M346B,b8ec25dfa29159e225c1adcb6828f956eb7b4864)
+$(call add-radio-file-sha1-checked,radio/keystorage.bin_SM-M346B,1dd22da32eaebf530a8cfee94a3abfc820e53177)
+$(call add-radio-file-sha1-checked,radio/ldfw.img_SM-M346B,0db9aebc0f98c6a6d7ce57b382a557bfaf26a01d)
+$(call add-radio-file-sha1-checked,radio/models,cb34ff7f146dac563ca08f03f0d7047231e3314a)
+$(call add-radio-file-sha1-checked,radio/modem.bin_SM-M346B,c039f991a0387bd006c31d0eb0dd816092824e4c)
+$(call add-radio-file-sha1-checked,radio/modem_debug.bin_SM-M346B,3c6963ba5b618470bad3034ad69a925d4c975113)
+$(call add-radio-file-sha1-checked,radio/sboot.bin_SM-M346B,76eb4ea910bc59807b99d64720bffdae83ebf352)
+$(call add-radio-file-sha1-checked,radio/tzar.img_SM-M346B,9c17f9667e222cf9c671248d601fc64364acdecb)
+$(call add-radio-file-sha1-checked,radio/tzsw.img_SM-M346B,5163b7858449a8422b4e0e29abb4477314340412)
+$(call add-radio-file-sha1-checked,radio/uh.bin_SM-M346B,afb18ec483cbd758bb95dae334d6a5a17f86b546)
+$(call add-radio-file-sha1-checked,radio/up_param.bin_SM-M346B,5100da435fbcf0ce6ee3b58344ca4e8fbaf5e870)
+$(call add-radio-file-sha1-checked,radio/version_SM-M346B,9b97205b0782d3ec3c4684e4f441bc0a37c310b0)
+
+endif
