@@ -6,17 +6,72 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/m34x
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/m34x/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
-    vendor/samsung/m34x/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
-    vendor/samsung/m34x/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
-    vendor/samsung/m34x/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
-    vendor/samsung/m34x/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
-    vendor/samsung/m34x/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
-    vendor/samsung/m34x/proprietary/vendor/etc/plmn_delta_chn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_chn.bin \
-    vendor/samsung/m34x/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
-    vendor/samsung/m34x/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
+    vendor/samsung/m34x/proprietary/recovery/root/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/gt9895_m34x.bin \
+    vendor/samsung/m34x/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
+    vendor/samsung/m34x/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_bt.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_bt.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_common.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_common.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_t_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_wlan.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_t_wlan_t.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_wlan_t.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_wlan_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan_sw.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_wlan_t.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan_t.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_wlan_t_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan_t_sw.hcf \
+    vendor/samsung/m34x/proprietary/vendor/etc/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/slsi_reg_database.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
+    vendor/samsung/m34x/proprietary/vendor/firmware/OD_V2.3.7_02_05_VGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.3.7_02_05_VGA.nnc \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SetMultiCalInfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SetMultiCalInfo.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/a2dpcom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a2dpcom.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/abov/a96t396_m34x_main.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/abov/a96t396_m34x_main.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/abox_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/abox_tplg.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.conf \
+    vendor/samsung/m34x/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/bidirmic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bidirmic.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/calliope_dram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_dram.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_sram.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/default_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/default_configuration.flm.cfg.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/dolby.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dolby.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/dual_cal_wide_swide.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dual_cal_wide_swide.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9895_m34x.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/is_lib.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/is_rta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/is_rta.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/listenbackeffect.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/listenbackeffect.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_4HA.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_4HA.json \
+    vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_GC02M2.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_GC02M2.json \
+    vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_HI1339.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_HI1339.json \
+    vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_JN1.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_JN1.json \
+    vendor/samsung/m34x/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/nfc/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/st21nfc_fw.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/os.checked.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/sb_music.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_music.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/sectiongraph_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sectiongraph_tplg.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/sectiongraph_tplg.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/sectiongraph_tplg.conf \
+    vendor/samsung/m34x/proprietary/vendor/firmware/secure_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/secure_configuration.flm.cfg.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_4ha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4ha.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc02m1.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_gc02m1b.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc02m1b.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_gc02m2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc02m2.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc5035.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_hi1339.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_hi1339.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_imx355.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_imx355.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/setfile_jn1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_jn1.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/swcnr_SAK2L4.json:$(TARGET_COPY_OUT_VENDOR)/firmware/swcnr_SAK2L4.json \
+    vendor/samsung/m34x/proprietary/vendor/firmware/tfa9878.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa9878.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/samsung/m34x/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
     vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
@@ -50,30 +105,32 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476 \
     vendor/samsung/m34x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-564c544b4456:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-564c544b4456 \
     vendor/samsung/m34x/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030 \
-    vendor/samsung/m34x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
+    vendor/samsung/m34x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100 \
+    vendor/samsung/m34x/proprietary/vendor_ramdisk/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/gt9895_m34x.bin
 
 PRODUCT_PACKAGES += \
-    libsemnativecarrierfeature \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
+    libgf_in_system_lib \
+    libqfp_sensortest \
+    libsynaFpSensorTestNwd \
     libswdap \
-    libSemDataProps \
-    libSemTelephonyProps \
+    camera.s5e8825 \
+    libMERTA \
     libexynoscamera3 \
-    libfloatingfeature \
-    libprotobuf-cpp-full-21.7 \
-    libril_sem \
-    libsec-ril \
+    libexynoscamera_merta_plugin \
+    libexynoscamera_swlme_plugin \
+    libexynoscamera_vpl_plugin \
+    liblmecpu \
+    libsec2lsi_conversion \
+    libskeymint10device \
+    libskeymint_cli \
     libstork_shared \
-    libvkmanager_vendor \
+    libswlme \
     libvkservice \
-    vendor.samsung.hardware.radio-V1-ndk \
-    vendor.samsung.hardware.radio.bridge-V1-ndk \
-    vendor.samsung.hardware.radio.channel-V1-ndk \
-    vendor.samsung.hardware.radio.data-V1-ndk \
-    vendor.samsung.hardware.radio.messaging-V1-ndk \
-    vendor.samsung.hardware.radio.sim-V1-ndk \
-    vendor.samsung.hardware.radio.exclude.slsi.xml \
-    vendor.samsung.hardware.radio_manifest_2_33.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
-    cass \
-    rild \
-    vaultkeeperd
+    vendor.samsung.hardware.security.vaultkeeper@2.0 \
+    vaultkeeper_manifest.xml \
+    android.hardware.security.keymint-service.samsung \
+    vaultkeeperd \
+    vendor.samsung.hardware.security.vaultkeeper@2.0-service
