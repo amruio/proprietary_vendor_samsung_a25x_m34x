@@ -111,10 +111,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbauthserver \
     libbauthtzcommon \
-    libegis_fp_normal_sensor_test \
-    libgf_in_system_lib \
-    libqfp_sensortest \
-    libsynaFpSensorTestNwd \
     libswdap \
     camera.s5e8825 \
     libMERTA \
