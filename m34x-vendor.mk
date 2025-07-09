@@ -110,10 +110,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor_ramdisk/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/gt9895_m34x.bin
 
 PRODUCT_PACKAGES += \
-    libbauthserver \
-    libbauthtzcommon \
     camera.s5e8825 \
     libMERTA \
+    libbauthserver \
+    libbauthtzcommon \
     libexynoscamera3 \
     libexynoscamera_merta_plugin \
     libexynoscamera_swlme_plugin \
