@@ -111,6 +111,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor_ramdisk/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/gt9895_m34x.bin
 
 PRODUCT_PACKAGES += \
+    lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_AlbumArt_ver105 \
+    lib_SoundAlive_play_plus_ver500 \
+    lib_SoundBooster_ver1130 \
+    libaudiosaplus_sec \
+    libmyspace \
+    libsamsungSoundbooster_plus \
     camera.s5e8825 \
     libMERTA \
     libbauthserver \
