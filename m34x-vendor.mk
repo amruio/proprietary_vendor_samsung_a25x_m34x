@@ -24,9 +24,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
-    vendor/samsung/m34x/proprietary/vendor/firmware/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
     vendor/samsung/m34x/proprietary/vendor/firmware/OD_V2.3.7_02_05_VGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.3.7_02_05_VGA.nnc \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B/NPU.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B/calliope_sram.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B/mfc_fw.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B/os.checked.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B/vts.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B2/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B2/NPU.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B2/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B2/calliope_sram.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B2/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B2/mfc_fw.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B2/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B2/os.checked.bin \
+    vendor/samsung/m34x/proprietary/vendor/firmware/SM-M346B2/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-M346B2/vts.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/SetMultiCalInfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SetMultiCalInfo.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/a2dpcom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a2dpcom.bin \
@@ -36,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/bidirmic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bidirmic.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/calliope_dram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_dram.bin \
-    vendor/samsung/m34x/proprietary/vendor/firmware/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_sram.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/default_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/default_configuration.flm.cfg.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/dolby.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dolby.bin \
@@ -49,9 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_GC02M2.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_GC02M2.json \
     vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_HI1339.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_HI1339.json \
     vendor/samsung/m34x/proprietary/vendor/firmware/lmecpu_JN1.json:$(TARGET_COPY_OUT_VENDOR)/firmware/lmecpu_JN1.json \
-    vendor/samsung/m34x/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/nfc/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/st21nfc_fw.bin \
-    vendor/samsung/m34x/proprietary/vendor/firmware/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/os.checked.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/sb_music.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_music.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
@@ -72,42 +78,76 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
-    vendor/samsung/m34x/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000048444350 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-0000534b504d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0000534b504d \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0053545354ab \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-42494f535542:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-42494f535542 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-46494e474502:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-46494e474502 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4662436b6d52:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4662436b6d52 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-474154454b45 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4b45594d5354:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4b45594d5354 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4d5053545549:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4d5053545549 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4d704e434954:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4d704e434954 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4d70536b566e:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4d70536b566e \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4d7073534d43:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4d7073534d43 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-4d7073617574:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4d7073617574 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-505256544545:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-505256544545 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-5345435f4652:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5345435f4652 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-54412d48444d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-54412d48444d \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-54496473706c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-54496473706c \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-544974684c6c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-544974684c6c \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-656e676d6f64 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365636f6d \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-6b6e78677564:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-6b6e78677564 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-6d706f667376:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-6d706f667376 \
-    vendor/samsung/m34x/proprietary/vendor/tee/00000000-0000-0000-0000-6d73745f5441:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-6d73745f5441 \
-    vendor/samsung/m34x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-494363447256:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-494363447256 \
-    vendor/samsung/m34x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-4d53546d7374 \
-    vendor/samsung/m34x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476 \
-    vendor/samsung/m34x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-564c544b4456:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-564c544b4456 \
-    vendor/samsung/m34x/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030 \
-    vendor/samsung/m34x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-000000010081 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-000000020081 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-000000534b4d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-000048444350 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-0000534b504d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-0000534b504d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-0050524f4341 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-0053545354ab \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-00575644524d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-42494f535542:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-42494f535542 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-46494e474502:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-46494e474502 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4662436b6d52:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4662436b6d52 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-474154454b45 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4b45594d5354:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4b45594d5354 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4d5053545549:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4d5053545549 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4d704e434954:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4d704e434954 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4d70536b566e:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4d70536b566e \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4d7073534d43:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4d7073534d43 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-4d7073617574:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-4d7073617574 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-505256544545:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-505256544545 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-5345435f4652:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-5345435f4652 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-54412d48444d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-54412d48444d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-54496473706c:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-54496473706c \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-544974684c6c:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-544974684c6c \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-564c544b5052 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-656e676d6f64 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-657365636f6d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-6b6e78677564:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-6b6e78677564 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-6d706f667376:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-6d706f667376 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/00000000-0000-0000-0000-6d73745f5441:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/00000000-0000-0000-0000-6d73745f5441 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-494363447256:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/driver/00000000-0000-0000-0000-494363447256 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-4d53546d7374:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/driver/00000000-0000-0000-0000-4d53546d7374 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/driver/00000000-0000-0000-0000-53626f786476 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-564c544b4456:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/driver/00000000-0000-0000-0000-564c544b4456 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/ffffffff-0000-0000-0000-000000000030 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B/tui/resolution_common/ID00000100 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-000000010081 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-000000020081 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-000000534b4d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-000048444350 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-0000534b504d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-0000534b504d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-0050524f4341 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-0053545354ab \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-00575644524d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-42494f535542:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-42494f535542 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-46494e474502:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-46494e474502 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4662436b6d52:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4662436b6d52 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-474154454b45 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4b45594d5354:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4b45594d5354 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4d5053545549:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4d5053545549 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4d704e434954:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4d704e434954 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4d70536b566e:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4d70536b566e \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4d7073534d43:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4d7073534d43 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-4d7073617574:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-4d7073617574 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-505256544545:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-505256544545 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-5345435f4652:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-5345435f4652 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-54412d48444d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-54412d48444d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-54496473706c:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-54496473706c \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-544974684c6c:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-544974684c6c \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-564c544b5052 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-656e676d6f64 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-657365636f6d \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-6b6e78677564:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-6b6e78677564 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-6d706f667376:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-6d706f667376 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/00000000-0000-0000-0000-6d73745f5441:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/00000000-0000-0000-0000-6d73745f5441 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-494363447256:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/driver/00000000-0000-0000-0000-494363447256 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-4d53546d7374:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/driver/00000000-0000-0000-0000-4d53546d7374 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/driver/00000000-0000-0000-0000-53626f786476 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-564c544b4456:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/driver/00000000-0000-0000-0000-564c544b4456 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/ffffffff-0000-0000-0000-000000000030 \
+    vendor/samsung/m34x/proprietary/vendor/tee/SM-M346B2/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/SM-M346B2/tui/resolution_common/ID00000100 \
     vendor/samsung/m34x/proprietary/vendor_ramdisk/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/gt9895_m34x.bin
 
 PRODUCT_PACKAGES += \
