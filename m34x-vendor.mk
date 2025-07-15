@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/recovery/root/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/gt9895_m34x.bin \
-    vendor/samsung/m34x/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/m34x/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/m34x/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/samsung/m34x/proprietary/vendor/etc/wifi/mx140_bt.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_bt.hcf \
@@ -151,13 +150,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/vendor_ramdisk/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/gt9895_m34x.bin
 
 PRODUCT_PACKAGES += \
-    lib_SoundAlive_3DPosition_ver202 \
-    lib_SoundAlive_AlbumArt_ver105 \
-    lib_SoundAlive_play_plus_ver500 \
-    lib_SoundBooster_ver1130 \
-    libaudiosaplus_sec \
-    libmyspace \
-    libsamsungSoundbooster_plus \
     camera.s5e8825 \
     libMERTA \
     libbauthserver \
