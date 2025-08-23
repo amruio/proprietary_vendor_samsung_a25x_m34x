@@ -1,0 +1,624 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "device/samsung/s5e8825-common",
+        "hardware/samsung",
+        "hardware/samsung_slsi-linaro/exynos",
+        "hardware/samsung_slsi-linaro/graphics",
+        "hardware/samsung_slsi-linaro/interfaces",
+        "vendor/samsung/s5e8825-common",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.s5e8825",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/camera.s5e8825.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhardware",
+                "libutils",
+                "libion_exynos",
+                "libhwjpeg",
+                "libnativewindow",
+                "libexynoscamera3",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMERTA",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMERTA.so",
+            ],
+            shared_libs: [
+                "libc++_shared",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbauthserver",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbauthserver.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libbauthtzcommon",
+                "libsynaFpSensorTestNwd",
+                "libegis_fp_normal_sensor_test",
+                "libgf_in_system_lib",
+                "libqfp_sensortest",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbauthtzcommon",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbauthtzcommon.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libteecl",
+                "libc",
+                "libm",
+                "libdl",
+                "libc++",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libexynoscamera3",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libexynoscamera3.so",
+            ],
+            shared_libs: [
+                "libshim_camera",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libui",
+                "libcamera_metadata",
+                "libutilscallstack",
+                "libexynosutils",
+                "libhwjpeg",
+                "libexynosv4l2",
+                "libion_exynos",
+                "libsync",
+                "libcsc",
+                "libexynosgraphicbuffer",
+                "libbase",
+                "libsensorndkbridge",
+                "libhwjsqz",
+                "libsecnativefeature",
+                "libuniplugin",
+                "libsensorlistener",
+                "libuniapi",
+                "vendor.samsung.hardware.thermal@1.0",
+                "libhidlbase",
+                "libSEF.quram",
+                "libepicoperator",
+                "libexynoscamera_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libexynoscamera_merta_plugin",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libexynoscamera_merta_plugin.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libexynoscamera_plugin",
+                "libexynosutils",
+                "libMERTA",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libexynoscamera_swlme_plugin",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libexynoscamera_swlme_plugin.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libexynoscamera_plugin",
+                "libexynosutils",
+                "libswlme",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libexynoscamera_vpl_plugin",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libexynoscamera_vpl_plugin.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libexynoscamera_plugin",
+                "libexynosutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblmecpu",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblmecpu.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsec2lsi_conversion",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsec2lsi_conversion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libskeymint10device",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libskeymint10device.so",
+            ],
+            shared_libs: [
+                "libshim_crypto",
+                "android.hardware.security.rkp-V3-ndk",
+                "libcrypto-tm",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libskeymint_cli",
+                "libsecril-client",
+                "vendor.samsung.hardware.keymint-V1-ndk_platform",
+                "android.hardware.security.keymint-V4-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libcppbor_external",
+                "libjsoncpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libskeymint_cli",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libskeymint_cli.so",
+            ],
+            shared_libs: [
+                "libshim_crypto",
+                "android.hardware.security.rkp-V3-ndk",
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libutils",
+                "android.hardware.keymaster@4.0",
+                "android.hardware.keymaster@4.1",
+                "libkeymaster4support",
+                "libkeymaster4_1support",
+                "libhidlbase",
+                "libcrypto-tm",
+                "libbinder_ndk",
+                "libsecril-client",
+                "android.hardware.security.keymint-V4-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libjsoncpp",
+                "libteecl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstork_shared",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstork_shared.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswlme",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libswlme.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "liblmecpu",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvkservice",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvkservice.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libstork_shared",
+                "libteecl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.security.vaultkeeper@2.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vaultkeeper_manifest.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/vaultkeeper_manifest.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint-service.samsung",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service.samsung",
+            ],
+            shared_libs: [
+                "libshim_crypto",
+                "android.hardware.security.rkp-V3-ndk",
+                "libskeymint10device",
+                "vendor.samsung.hardware.keymint-V1-ndk_platform",
+                "android.hardware.security.keymint-V4-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor_external",
+                "libcrypto-tm",
+                "libkeymaster_portable",
+                "libkeymint",
+                "liblog",
+                "libpuresoftkeymasterdevice",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vaultkeeperd",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vaultkeeperd",
+            ],
+            shared_libs: [
+                "libdsms_vendor",
+                "libvkservice",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.security.vaultkeeper@2.0-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "vendor.samsung.hardware.security.vaultkeeper@2.0",
+                "libvkmanager_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
