@@ -1,0 +1,12 @@
+service vendor.hermes-default /vendor/bin/hw/vendor.samsung.hardware.security.hermes-service
+    interface aidl vendor.samsung.hardware.security.hermes.ISehHermesCommand/default
+    class hal
+    user system
+    group system
+    disabled
+
+on property:ro.product.system.device=a25x
+    start vendor.hermes-default
+
+on post-fs-data && property:ro.product.system.device=a25x
+    mkdir /data/vendor/log/hermes 0770 system log
