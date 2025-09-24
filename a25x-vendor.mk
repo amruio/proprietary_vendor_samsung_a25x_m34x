@@ -440,8 +440,8 @@ PRODUCT_PACKAGES += \
  vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform \
  iweaver_v1_manifest.xml \
  vendor.samsung.hardware.security.hermes.xml \
- #vendor.samsung.hardware.security.vaultkeeper-manifest.xml \
  hermesd \
  android.hardware.security.keymint-service.samsung \
  vendor.samsung.hardware.security.hermes-service \
  vaultkeeperd \
+ vaultkeeper_manifest.xml
