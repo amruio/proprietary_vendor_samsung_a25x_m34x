@@ -230,11 +230,5 @@ PRODUCT_PACKAGES += \
     libsec2lsi_conversion \
     libskeymint10device \
     libskeymint_cli \
-    libstork_shared \
     libswlme \
-    libvkservice \
-    vendor.samsung.hardware.security.vaultkeeper@2.0 \
-    vaultkeeper_manifest.xml \
-    android.hardware.security.keymint-service.samsung \
-    vaultkeeperd \
-    vendor.samsung.hardware.security.vaultkeeper@2.0-service
+    android.hardware.security.keymint-service.samsung
