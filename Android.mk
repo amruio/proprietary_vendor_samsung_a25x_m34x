@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),a25x)
+ifeq ($(TARGET_DEVICE),amvi)
 
 $(call add-radio-file-sha1-checked,radio/fld.bin_SM-E346B,3f690478663916c1e3eb5869ba0551fc7d57b3bc)
 $(call add-radio-file-sha1-checked,radio/fld.bin_SM-M346B,d7df5c70f4eff7e9a83f1782bb3dea4410ae255a)
