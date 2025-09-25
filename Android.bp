@@ -576,31 +576,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstork_shared",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstork_shared.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libswlme",
     owner: "samsung",
     strip: {
@@ -628,62 +603,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libvkservice",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvkservice.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libstork_shared",
-                "libteecl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-/*
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.security.vaultkeeper@2.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-*/
 cc_prebuilt_library_shared {
     name: "nfc_nci.st21nfc.st",
     owner: "samsung",
@@ -793,31 +712,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_etc_xml {
     name: "iweaver_v1_manifest.xml",
     owner: "samsung",
@@ -835,16 +729,7 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
-/*
-prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.security.vaultkeeper-manifest.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.security.vaultkeeper-manifest.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-*/
+
 prebuilt_etc_xml {
     name: "vaultkeeper_manifest.xml",
     owner: "samsung",
@@ -965,99 +850,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "vaultkeeperd",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vaultkeeperd",
-            ],
-            shared_libs: [
-                "libdsms_vendor",
-                "libvkservice",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-/*
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.security.vaultkeeper@2.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "vendor.samsung.hardware.security.vaultkeeper@2.0",
-                "libvkmanager_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-*/
-/*cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.security.vaultkeeper-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper-service",
-            ],
-            shared_libs: [
-                "vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libbinder",
-                "libvkmanager_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-*/
 cc_prebuilt_library_shared {
     name: "libexynoscamera3_a25x",
     owner: "samsung",
