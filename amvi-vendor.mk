@@ -435,8 +435,5 @@ PRODUCT_PACKAGES += \
  vendor.samsung.hardware.security.drk-V1-ndk_platform \
  vendor.samsung.hardware.security.drk@2.0 \
  vendor.samsung.hardware.security.hermes-V1-ndk_platform \
- iweaver_v1_manifest.xml \
- vendor.samsung.hardware.security.hermes.xml \
- hermesd \
  android.hardware.security.keymint-service.samsung \
  vendor.samsung.hardware.security.hermes-service \
